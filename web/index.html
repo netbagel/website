@@ -1,0 +1,104 @@
+<!doctype html>
+<html>
+    <style>
+    body {
+        background: radial-gradient(circle, rgba(34,34,34,1) 0%, rgba(17,17,17,1) 100%);
+    }
+
+
+    #mainDiv {
+        top: 0%;
+        right: 50%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    #main {
+        top: 2%;
+        width: 800;
+        height: 90%;
+        position: absolute;
+        overflow: hidden;
+        display: block;
+        overflow: hidden;
+        image-rendering: pixelated;
+        image-rendering: crisp-edges;
+        box-shadow: 0px 0px 40px #000000;
+        border-radius: 6px;
+    }
+
+    #navbar {
+        align-items: center;
+        background-color: #1a1a1a;
+        border-radius: 6px;
+        box-shadow: 0px 6px 24px #000000;
+        position: fixed;
+        width: 800px;
+        height: 6%;
+        left: 50%;
+        bottom: 1%;
+        display: inline-block;
+        transform: translate(-50%, 0%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden; 
+    }
+
+    .naventry {
+        margin: 0 15px;
+        flex: 0 0 auto;
+        width: auto;
+        color: #3f3f3f;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 17px;
+        cursor: pointer;
+    }
+
+    .naventry:hover {
+        transition: 0.05s;
+        color: #a8a8a8;
+    }
+
+    .selectedentry {
+        margin: 0 15px;
+        flex: 0 0 auto;
+        width: auto;
+        color: #ffffff;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 17px;
+        transition: 0.3s;
+        cursor: default;
+    }
+
+    </style>
+
+    <head>
+        <link rel="icon" type="image/x-icon" href="./image/thing.ico">
+        <title>Netbagel's Page</title>
+    </head>
+
+    <body>
+        <div id="mainDiv">
+            <canvas id="main"></canvas>
+        </div>
+
+        <div id="navbar" >
+            <div class="naventry" id="landing">
+                landing page
+            </div>
+            <div class="naventry" id="aboutme">
+                about me (& socials)
+            </div>
+            <div class="naventry" id="mywork">
+                my work
+            </div>
+            <div class="naventry" id="flappybird">
+                flappy bird
+            </div>
+        </div>
+
+        <script src="./main.js"></script>
+    </body>
+</html>
